@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+
+
+<bean id="empobject" class="com.ibm.Employee" autowire="byName">
+
+   <property name="id" value="123"></property>
+   
+   <property name="name" value="mahi"></property>
+   
+   <property name="salary" value="12000"></property>
+   
+   </bean>
+   <!-- 10 address -->
+<bean id="addressPermanent" class="com.ibm.Address">
+   
+   <property name="city" value="hyderabad"></property>
+   
+   <property name="state" value="TS"></property>
+   
+   <property name="country" value="india"></property>
+   
+   
+   </bean>
+
+   
+   
+   
+   <bean id="addressTemporary" class="com.ibm.Address">
+   
+   <property name="city" value="Delhi"></property>
+   
+   <property name="state" value="AP"></property>
+   
+   <property name="country" value="india"></property>
+   
+   
+   
+
+</bean>
+	
+	</beans>
